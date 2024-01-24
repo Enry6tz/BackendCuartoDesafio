@@ -1,0 +1,37 @@
+ <main class="container mt-5">
+        <h1>Desafio N° 4</h1>
+        <div class="card">
+            <div class="card-header">
+                Backend comision 50015. Handlebars - WebSockets
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Endpoint de productos en tiempo real: <a
+                            href="http://localhost:8080/realtimeproducts">http://localhost:8080/realtimeproducts</a>
+                    </p>
+                    <div class="col-sm-12 card-container">
+                        <div class="row">
+                            <!-- Tarjetas productos -->
+                            {{#each productos}}
+                            <div class="col-sm-2">
+                                <div class="card mb-3">
+                                    <img src="{{this.thumbnails.[0].imagen1}}" class="card-img-top"
+                                        alt="Imagen de ejemplo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{this.title}}</h5>
+                                        <p class="card-text">{{this.description}}</p>
+                                        <p class="card-text"> Precio: $ <strong>{{this.price}}</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                             <!-- Fin Tarjetas productos -->
+                        </div>
+                    </div>
+                    <footer class="blockquote-footer footer-custom">Realizado Por: <cite
+                            title="Source Title">Seitz Enrique</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </main>

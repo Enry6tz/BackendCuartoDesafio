@@ -1,0 +1,57 @@
+:root {
+    /* Variables de colores */
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-fondo: #ecf0f1;
+    --color-texto: #333;
+  
+    /* Variables de tipografía */
+    --fuente-principal: 'Arial', sans-serif;
+    --tamano-texto: 16px;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-principal);
+    font-size: var(--tamano-texto);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+  }
+  
+  h1 {
+    color: var(--color-primario);
+    text-align: center;
+  }
+  
+  .card-container {
+    max-height: 600px; 
+    overflow-y: auto; 
+  }
+.footer-custom{
+  margin-top: 15px;
+}
+.card img {
+  max-height: 100px; /* Ajusta el tamaño máximo de la imagen */
+  object-fit: cover; /* Ajusta la forma en que se muestra la imagen */
+}
+
+.card-body {
+  padding: 10px; /* Ajusta el espacio interno de la card */
+}
+
+.card-title {
+  font-size: 14px; /* Ajusta el tamaño del título de la card */
+}
+
+.card-text {
+  font-size: 12px; /* Ajusta el tamaño del texto de la card */
+}
